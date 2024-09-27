@@ -9,6 +9,14 @@ The project includes:
 
 ## Files
 
+### Directory Structure
+
+```
+/src
+    ├── hssl_reader_FSM.vhd         # VHDL implementation of the HSSL protocol encoder
+    └── HSSL_reader_FSM_tb.vhd      # VHDL testbench for verifying the HSSL protocol encoder firmware
+```
+
 ### 1. `hssl_reader_FSM.vhd`
 This file describes the **HSSL Reader** entity that reads serial data and outputs processed data words. Key features of the module include:
 - **Clock Domain Crossing**: Synchronizes the input data with the primary clock and processes it according to the FSM.
